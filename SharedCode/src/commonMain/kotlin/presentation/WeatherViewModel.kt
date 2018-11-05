@@ -5,7 +5,7 @@ import org.kotlin.mpp.mobile.domain.UseCaseFactory
 import org.kotlin.mpp.mobile.model.WeatherResponse
 
 class WeatherViewModel(
-    private val stateListener: (WeatherState) -> Nothing
+    private val stateListener: (WeatherState) -> Unit
 ) {
     private val scope = UICoroutineScope()
     private val useCaseFactory = UseCaseFactory()
